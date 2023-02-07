@@ -30,7 +30,7 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="ProjectTemplate.UWP.App">
+      EntryPoint="ProjectTemplate.App">
       <uap:VisualElements
         DisplayName="ProjectTemplate.UWP"
         Square150x150Logo="Assets\Square150x150Logo.png"
