@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ProjectTemplate.WinAppSDK (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ProjectTemplate.WinAppSDK (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
