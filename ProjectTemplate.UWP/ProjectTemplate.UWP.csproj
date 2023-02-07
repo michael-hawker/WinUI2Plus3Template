@@ -120,7 +120,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="..\ProjectTemplate.WinAppSDK\MainPage.xaml.cs">
+      <Link>MainPage.xaml.cs</Link>
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -153,6 +154,9 @@
     <Content Include="..\ProjectTemplate.WinAppSDK\Assets\Wide310x150Logo.scale-200.png">
       <Link>Assets\Wide310x150Logo.scale-200.png</Link>
     </Content>
+    <Content Include="..\ProjectTemplate.WinAppSDK\Llama.jpg">
+      <Link>Llama.jpg</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="..\ProjectTemplate.WinAppSDK\App.xaml">
@@ -160,7 +164,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="..\ProjectTemplate.WinAppSDK\MainPage.xaml">
+      <Link>MainPage.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

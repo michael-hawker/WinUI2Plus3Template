@@ -1,0 +1,30 @@
+<Page x:Class="ProjectTemplate.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:ProjectTemplate"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+      mc:Ignorable="d">
+
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Spacing="32">
+
+        <TextBlock HorizontalAlignment="Center"
+                   Style="{ThemeResource TitleTextBlockStyle}"
+                   Text="This is a template to help file bug reports." />
+
+        <Border Width="256"
+                Height="256"
+                CornerRadius="9999">
+            <Border.Background>
+                <ImageBrush ImageSource="ms-appx:///Llama.jpg" />
+            </Border.Background>
+        </Border>
+
+        <TextBlock HorizontalAlignment="Center"
+                   Text="You can write XAML and code in the MainPage file and run it against both WinUI 2 and 3 with ease."
+                   TextWrapping="WrapWholeWords" />
+    </StackPanel>
+</Page>
