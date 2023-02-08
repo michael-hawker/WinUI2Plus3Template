@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "XAMLLlama",
+  "classifications": [
+    "UWP",
+    "WinUI2",
+    "WinUI3",
+    "WindowsAppSDK"
+  ],
+  "name": "WinUI 2+3 Repro template",
+  "identity": "Llama.ProjectTemplate",
+  "shortName": "winui2plus3",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "ProjectTemplate",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+
+      "exclude": [
+        "readme.md",
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        ".template.config/**/*",
+        ".git/**/*",
+        ".vs/**/*"
+      ]
+    }
+  ],
+  "guids": [
+    "A9A14B65-4FCF-46A3-82DE-BDA04B87D5F4",
+    "B51B1913-E1BD-47C9-A52A-8448FB0EF5EE",
+    "59730A56-1CA6-4CA3-B0B3-8FE907D3DB21",
+    "369d136a-c9ce-4b56-b5be-b44d89f944cf",
+    "d31e29b8-f9d5-49fd-abb4-c919a4d7da48"
+  ],
+  "symbols": {
+    "copyrightYear": {
+      "type": "generated",
+      "generator": "now",
+      "replaces": "CUR_YEAR",
+      "parameters": {
+        "format": "yyyy"
+      }
+    },
+    "HttpPortGenerated": {
+      "type": "generated",
+      "generator": "port",
+      "replaces": "52475",
+      "parameters": {
+        "low": 50000,
+        "high": 59999
+      }
+    },
+    "HttpsPortGenerated": {
+      "type": "generated",
+      "generator": "port",
+      "replaces": "44386",
+      "parameters": {
+        "low": 44300,
+        "high": 44399
+      }
+    }
+  }
+}

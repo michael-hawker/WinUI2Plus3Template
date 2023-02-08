@@ -1,0 +1,71 @@
+
+# https://docs.github.com/actions/using-workflows/about-workflows
+# https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions
+
+name: CI
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "Xaml-Style-Check"
+  Build-Project-Template:
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Install .NET 6 SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.0.3
+
+      - name: MSBuild
+        run: msbuild.exe ProjectTemplate.sln /restore -p:Configuration=Debug
+
+  Build-New-Project:
+    runs-on: windows-latest
+
+    steps:
+      - name: Install .NET 6 SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          path: main
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.0.3
+
+      # Create a new experiment from the template and test using that
+      - name: Install template
+        working-directory: ./main
+        run: dotnet new --install ./
+
+      - name: Create new project
+        working-directory: ./
+        run: dotnet new winui2plus3 -n CiTestExp
+
+      - name: MSBuild
+        working-directory: ./CiTestExp
+        run: msbuild.exe CiTestExp.sln /restore -p:Configuration=Release
