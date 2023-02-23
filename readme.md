@@ -109,3 +109,15 @@ This template was created using the `dotnet` [templating tools](https://learn.mi
 8. The UWP head had its `MainPage.xaml` removed and linked to the one in the WindowsAppSDK project. (As was the backing `MainPage.xaml.cs` code file.)
 
 9. The using directives were added to the top of `MainPage.xaml` to differentiate between the two namespaces for `Windows.UI.Xaml` and `Microsoft.UI.Xaml`.
+
+## Code of Conduct
+
+This repo abides by the [Microsoft Open Source Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Trademark Notice
+
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow Microsoft’s Trademark & Brand Guidelines. Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party’s policies.
+
+## License
+
+Licensed under CC0, see [license.txt](license.txt) for details.
