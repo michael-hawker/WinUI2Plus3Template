@@ -10,8 +10,10 @@ TODO: More information about using this template can be found below. Feel free t
 
 ## Current Template Versions
 
-- WinUI 2.8.3
-- WindowsAppSDK 1.2.230118.102
+| Package Name                           | Version       |
+|----------------------------------------|---------------|
+| Microsoft.UI.Xaml (a.k.a. WinUI 2)     | v2.8.2        |
+| Microsoft.WindowsAppSDK (inc. WinUI 3) | v1.2.230217.4 |
 
 Find out more about [the template used for this project here](https://github.com/michael-hawker/WinUI2Plus3Template).
 
