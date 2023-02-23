@@ -47,7 +47,7 @@ You can see the code in the MainPage.xaml.cs on line ##...
 
 We recommend performing a `git init` and `git commit` after creating this template so you can track the changes made to it. A `.gitignore` file has been provided already.
 
-Remember to delete your `bin` and `obj` directories before zipping up your project for upload.
+Remember to delete your `bin` and `obj` directories before zipping up your project for upload. You can use the provided `clean.bat` for that.
 
 ## Adding new files
 
