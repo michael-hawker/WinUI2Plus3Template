@@ -1,6 +1,6 @@
 # ProjectTemplate Readme
 
-This is a template for reproducing issues across UWP and the Windows App SDK with WinUI 2 & 3 in a clean environment.
+This is a template for reproducing issues across UWP and the [Windows App SDK](https://aka.ms/windowsappsdk) with [WinUI 2 & 3](https://aka.ms/winui) in a clean environment.
 
 It allows you to write XAML and/or code once in a project and run it on both platforms easily.
 
